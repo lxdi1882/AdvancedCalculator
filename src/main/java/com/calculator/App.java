@@ -1,22 +1,21 @@
-
 package com.calculator;
 
+import com.calculator.ui.CalculatorView;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        Label label = new Label("Advanced Calculator");
-
-        StackPane root = new StackPane(label);
-        Scene scene = new Scene(root, 400, 300);
+        CalculatorView view = new CalculatorView();
+        Scene scene = new Scene(view.getRoot(), 560, 820);
+        scene.getStylesheets().add(getClass().getResource("/com/calculator/style.css").toExternalForm());
 
         stage.setTitle("Advanced Calculator");
+        stage.setMinWidth(480);
+        stage.setMinHeight(700);
         stage.setScene(scene);
         stage.show();
     }

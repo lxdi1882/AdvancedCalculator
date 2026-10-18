@@ -1,0 +1,59 @@
+.calc-root {
+    -fx-background-color: linear-gradient(to bottom, #3b3f46, #1f2227);
+}
+
+/* ---------- LCD ---------- */
+.lcd {
+    -fx-background-color: #c5cfb4;
+    -fx-background-radius: 8;
+    -fx-border-color: #121418;
+    -fx-border-width: 4;
+    -fx-border-radius: 8;
+    -fx-padding: 10 14 10 14;
+}
+
+.expr-field,
+.expr-field:focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-text-fill: #1c2418;
+    -fx-highlight-fill: transparent;
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-size: 20px;
+    -fx-alignment: CENTER-RIGHT;
+    -fx-padding: 0;
+}
+
+.result-label {
+    -fx-text-fill: #101810;
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-weight: bold;
+}
+
+.result-label.error {
+    -fx-text-fill: #8a1c1c;
+}
+
+/* ---------- buttons ---------- */
+.calc-btn {
+    -fx-background-radius: 9;
+    -fx-background-insets: 0;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 4, 0.2, 0, 2);
+}
+
+.calc-btn:hover   { -fx-opacity: 0.88; }
+.calc-btn:pressed { -fx-opacity: 0.72; -fx-translate-y: 1; }
+
+.btn-num    { -fx-background-color: #ecebe7; -fx-text-fill: #1a1a1a; -fx-font-size: 18px; }
+.btn-fn     { -fx-background-color: #3f4651; -fx-font-size: 13px; }
+.btn-op     { -fx-background-color: #5b6475; -fx-font-size: 18px; }
+.btn-letter { -fx-background-color: #d3d6dc; -fx-text-fill: #1a1a1a; }
+.btn-shift  { -fx-background-color: #c98a1d; -fx-font-size: 13px; }
+.btn-clear  { -fx-background-color: #d9731f; -fx-font-size: 16px; }
+.btn-equals { -fx-background-color: #2f6fb0; -fx-font-size: 26px; }
